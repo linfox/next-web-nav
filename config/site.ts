@@ -1,8 +1,8 @@
 export type SiteConfig = typeof siteConfig
 
 export const siteConfig = {
-  name: "shopify导航",
-  description: "基于 Next.js 的前端导航网站",
+  name: "外贸导航",
+  description: "基于 Next.js 的外贸导航网站",
   mainNav: [],
   links: {
     twitter: "https://twitter.com/liwenka1",
@@ -15,7 +15,7 @@ export interface NavLink {
   icon: string
   /** 站点名称 */
   title: string
-  /** 站点名称 */
+  /** 站点描述 */
   desc: string
   /** 站点链接 */
   link: string
@@ -28,834 +28,1075 @@ type NavData = {
 
 export const NavData: NavData[] = [
   {
-    title: "常用工具",
-    items: [
+    "title": "实用外贸工具*实用外贸查询",
+    "items": [
       {
-        icon: "https://caniuse.com/img/favicon-128.png",
-        title: "Can I use",
-        desc: "前端 API 兼容性查询",
-        link: "https://caniuse.com"
+        "icon": "https://logo.clearbit.com/hd.chinatax.gov.cn",
+        "title": "出口退说查询1",
+        "desc": "出口退说查询1",
+        "link": "http://hd.chinatax.gov.cn/fagui/action/InitChukou.do"
       },
       {
-        icon: "https://tinypng.com/images/apple-touch-icon.png",
-        title: "TinyPNG",
-        desc: "在线图片压缩工具",
-        link: "https://tinypng.com"
+        "icon": "https://logo.clearbit.com/www.tax.sh.gov.cn",
+        "title": "出口退说查询2",
+        "desc": "出口退说查询2",
+        "link": "https://www.tax.sh.gov.cn/newxbwt/wzcx/TYCX_tuiShuiCodeSearch.jsp?SUB=111"
       },
       {
-        icon: "https://tool.lu/favicon.ico",
-        title: "在线工具",
-        desc: "开发人员的工具箱",
-        link: "https://tool.lu"
+        "icon": "https://logo.clearbit.com/cli.im",
+        "title": "二维码制作",
+        "desc": "二维码制作",
+        "link": "https://cli.im/"
       },
       {
-        icon: "https://processon.com/favicon.ico",
-        title: "ProcessOn",
-        desc: "免费在线流程图思维导图",
-        link: "https://processon.com/"
+        "icon": "https://logo.clearbit.com/www.makepic.com",
+        "title": "制作条形码",
+        "desc": "制作条形码",
+        "link": "http://www.makepic.com/barcode.php"
       },
       {
-        icon: "/icons/json-cn.ico",
-        title: "Json 中文网",
-        desc: "JSON 在线解析及格式化验证",
-        link: "https://www.json.cn"
+        "icon": "https://logo.clearbit.com/neverbounce.com",
+        "title": "批量验证邮箱1",
+        "desc": "批量验证邮箱1",
+        "link": "https://neverbounce.com/"
       },
       {
-        icon: "https://www.terminalgif.com/favicon.ico",
-        title: "Terminal Gif Maker",
-        desc: "在线生成 Terminal GIF",
-        link: "https://www.terminalgif.com"
+        "icon": "https://logo.clearbit.com/www.email-unlimited.com",
+        "title": "批量验证邮箱2",
+        "desc": "批量验证邮箱2",
+        "link": "https://www.email-unlimited.com/email_verifier.html"
       },
       {
-        icon: "https://astexplorer.net/favicon.png",
-        title: "AST Explorer",
-        desc: "一个 Web 工具，用于探索由各种解析器生成的 AST 语法树",
-        link: "https://astexplorer.net/"
+        "icon": "https://logo.clearbit.com/www.mailtester.com",
+        "title": "邮箱地址真假验证1",
+        "desc": "邮箱地址真假验证1",
+        "link": "http://www.mailtester.com/"
       },
       {
-        icon: "https://transform.tools/static/favicon.png",
-        title: "transform",
-        desc: "各类数据格式与对象转换",
-        link: "https://transform.tools"
+        "icon": "https://logo.clearbit.com/verify-email.org",
+        "title": "邮箱地址真假验证2",
+        "desc": "邮箱地址真假验证2",
+        "link": "http://verify-email.org/"
       },
       {
-        icon: "/icons/hoppscotch.png",
-        title: "Hoppscotch",
-        desc: "开源 API 开发生态系统",
-        link: "https://hoppscotch.io/"
+        "icon": "https://logo.clearbit.com/www.wasmyemailread.com",
+        "title": "邮件阅读追踪1",
+        "desc": "邮件阅读追踪1",
+        "link": "http://www.wasmyemailread.com/"
       },
       {
-        icon: "/icons/apifox.png",
-        title: "Apifox",
-        desc: "API 文档、API 调试、API Mock、API 自动化测试",
-        link: "https://www.apifox.cn/"
-      }
-    ]
-  },
-
-  {
-    title: "React",
-    items: [
-      {
-        icon: "https://zh-hans.reactjs.org/favicon.ico",
-        title: "React",
-        desc: "用于构建用户界面的 JavaScript 库",
-        link: "https://zh-hans.reactjs.org"
+        "icon": "https://logo.clearbit.com/whoreadme.com",
+        "title": "邮件阅读追踪2",
+        "desc": "邮件阅读追踪2",
+        "link": "http://whoreadme.com/"
       },
       {
-        icon: "https://reactrouter.com/favicon-light.png",
-        title: "React Router",
-        desc: "React 的声明式路由",
-        link: "https://reactrouter.com"
-      },
-      {
-        icon: "https://nextjs.org/static/favicon/safari-pinned-tab.svg",
-        title: "Next.js",
-        desc: "一个用于 Web 的 React 框架",
-        link: "https://nextjs.org"
-      },
-      {
-        icon: "https://img.alicdn.com/tfs/TB1YHEpwUT1gK0jSZFhXXaAtVXa-28-27.svg",
-        title: "UmiJS",
-        desc: "插件化的企业级前端应用框架",
-        link: "https://umijs.org"
-      },
-      {
-        icon: "https://gw.alipayobjects.com/zos/rmsportal/rlpTLlbMzTNYuZGGCVYM.png",
-        title: "Ant Design",
-        desc: "一套企业级 UI 设计语言和 React 组件库",
-        link: "https://ant.design"
-      },
-      {
-        icon: "https://gw.alipayobjects.com/zos/bmw-prod/69a27fcc-ce52-4f27-83f1-c44541e9b65d.svg",
-        title: "Ant Design Mobile",
-        desc: "构建移动 WEB 应用程序的 React 组件库",
-        link: "https://mobile.ant.design"
-      },
-      {
-        icon: "https://docs.pmnd.rs/apple-touch-icon.png",
-        title: "Zustand",
-        desc: "一个小型、快速、可扩展的 React 状态管理解决方案",
-        link: "https://docs.pmnd.rs/zustand/getting-started/introduction"
-      },
-      {
-        icon: "https://valtio.pmnd.rs/favicon.ico",
-        title: "Valtio",
-        desc: "makes proxy-state simple for React and Vanilla",
-        link: "https://valtio.pmnd.rs"
-      },
-      {
-        icon: "https://jotai.org/favicon.svg",
-        title: "Jotai",
-        desc: "primitive and flexible state management for React",
-        link: "https://jotai.org"
-      },
-      {
-        icon: "https://cn.redux.js.org/img/redux.svg",
-        title: "Redux",
-        desc: "JavaScript 应用的状态容器，提供可预测的状态管理",
-        link: "https://cn.redux.js.org"
-      },
-      {
-        icon: "https://recoiljs.org/zh-hans/img/favicon.png",
-        title: "recoil",
-        desc: "Recoil is an experimental state management framework for React.",
-        link: "https://recoiljs.org/zh-hans/"
-      },
-      {
-        icon: "https://zh.mobx.js.org/assets/mobx.png",
-        title: "MobX",
-        desc: "一个小型、快速、可扩展的 React 状态管理解决方案",
-        link: "https://zh.mobx.js.org"
-      },
-      {
-        icon: "https://ahooks.js.org/simple-logo.svg",
-        title: "ahooks",
-        desc: "一套高质量可靠的 React Hooks 库",
-        link: "https://ahooks.js.org/zh-CN"
+        "icon": "https://logo.clearbit.com/getemail.io",
+        "title": "get email谷歌插件",
+        "desc": "get email谷歌插件",
+        "link": "https://getemail.io/login"
       }
     ]
   },
   {
-    title: "Vue",
-    items: [
+    "title": "外语翻译工具",
+    "items": [
       {
-        icon: "https://cn.vuejs.org/logo.svg",
-        title: "Vue 3",
-        desc: "渐进式 JavaScript 框架",
-        link: "https://cn.vuejs.org"
+        "icon": "https://logo.clearbit.com/www.dreye.com.cn",
+        "title": "中英文字典1",
+        "desc": "中英文字典1",
+        "link": "http://www.dreye.com.cn/"
       },
       {
-        icon: "https://cn.vuejs.org/logo.svg",
-        title: "Vue 2",
-        desc: "渐进式 JavaScript 框架",
-        link: "https://v2.cn.vuejs.org"
+        "icon": "https://logo.clearbit.com/dict.cn",
+        "title": "中英文字典2",
+        "desc": "中英文字典2",
+        "link": "http://dict.cn/"
       },
       {
-        icon: "https://cn.vuejs.org/logo.svg",
-        title: "Vue Router",
-        desc: "Vue.js 的官方路由\n为 Vue.js 提供富有表现力、可配置的、方便的路由",
-        link: "https://router.vuejs.org/zh"
+        "icon": "https://logo.clearbit.com/www.google.com.hk",
+        "title": "Google在线翻译",
+        "desc": "Google在线翻译",
+        "link": "http://www.google.com.hk/language_tools?hl=zh-CN"
       },
       {
-        icon: "https://pinia.vuejs.org/logo.svg",
-        title: "Pinia",
-        desc: "符合直觉的 Vue.js 状态管理库",
-        link: "https://pinia.vuejs.org/zh"
+        "icon": "https://logo.clearbit.com/fanyi.youdao.com",
+        "title": "有道在线翻译",
+        "desc": "有道在线翻译",
+        "link": "http://fanyi.youdao.com/"
       },
       {
-        icon: "https://nuxt.com/icon.png",
-        title: "Nuxt.js",
-        desc: "一个基于 Vue.js 的通用应用框架",
-        link: "https://nuxt.com"
+        "icon": "https://logo.clearbit.com/www.worldlingo.com",
+        "title": "多国语言互译",
+        "desc": "多国语言互译",
+        "link": "http://www.worldlingo.com/wl/translate"
       },
       {
-        icon: "https://vueuse.org/favicon.svg",
-        title: "VueUse",
-        desc: "Vue Composition API 的常用工具集",
-        link: "https://vueuse.org"
+        "icon": "https://logo.clearbit.com/www.grammarly.com",
+        "title": "单词语法纠正",
+        "desc": "单词语法纠正",
+        "link": "https://www.grammarly.com/"
       },
       {
-        icon: "https://vitest.dev/favicon.ico",
-        title: "Vitest",
-        desc: "一个 Vite 原生单元测试框架。它很快！",
-        link: "https://cn.vitest.dev/"
+        "icon": "https://logo.clearbit.com/www.duolingo.cn",
+        "title": "小语种学习",
+        "desc": "小语种学习",
+        "link": "http://www.duolingo.cn/"
       },
       {
-        icon: "https://element-plus.org/images/element-plus-logo-small.svg",
-        title: "Element Plus",
-        desc: "基于 Vue 3，面向设计师和开发者的组件库",
-        link: "https://element-plus.org"
+        "icon": "https://logo.clearbit.com/www.worldlingo.com",
+        "title": "多国语言互译",
+        "desc": "多国语言互译",
+        "link": "http://www.worldlingo.com/wl/translate"
       },
       {
-        icon: "https://www.antdv.com/assets/logo.1ef800a8.svg",
-        title: "Ant Design Vue",
-        desc: "Ant Design 的 Vue 实现，开发和服务于企业级后台产品",
-        link: "https://antdv.com"
+        "icon": "https://logo.clearbit.com/fanyi.baidu.com",
+        "title": "百度在线翻译",
+        "desc": "百度在线翻译",
+        "link": "https://fanyi.baidu.com/"
       },
       {
-        icon: "https://fastly.jsdelivr.net/npm/@vant/assets/logo.png",
-        title: "Vant",
-        desc: "轻量、可定制的移动端 Vue 组件库",
-        link: "https://vant-ui.github.io/vant"
+        "icon": "https://logo.clearbit.com/nicetranslator.com",
+        "title": "小语种翻译1",
+        "desc": "小语种翻译1",
+        "link": "https://nicetranslator.com/"
       },
       {
-        icon: "https://webapp.didistatic.com/static/webapp/shield/Cube-UI_logo.ico",
-        title: "Cube UI",
-        desc: "基于 Vue.js 实现的精致移动端组件库",
-        link: "https://didi.github.io/cube-ui"
+        "icon": "https://logo.clearbit.com/www.linguee.com",
+        "title": "小语种翻译2",
+        "desc": "小语种翻译2",
+        "link": "https://www.linguee.com/"
       },
       {
-        icon: "https://img14.360buyimg.com/imagetools/jfs/t1/167902/2/8762/791358/603742d7E9b4275e3/e09d8f9a8bf4c0ef.png",
-        title: "NutUI",
-        desc: "京东风格的轻量级移动端组件库",
-        link: "https://nutui.jd.com"
+        "icon": "https://logo.clearbit.com/text-to-speech.imtranslator.net",
+        "title": "小语种翻译3",
+        "desc": "小语种翻译3",
+        "link": "http://text-to-speech.imtranslator.net/"
+      },
+      {
+        "icon": "https://logo.clearbit.com/www.acronymfinder.com",
+        "title": "英文缩写查",
+        "desc": "英文缩写查",
+        "link": "http://www.acronymfinder.com/"
+      },
+      {
+        "icon": "https://logo.clearbit.com/shortof.com",
+        "title": "英文缩写大全",
+        "desc": "英文缩写大全",
+        "link": "http://shortof.com/"
       }
     ]
   },
   {
-    title: "JavaScript",
-    items: [
+    "title": "外汇全球进出口查询",
+    "items": [
       {
-        icon: "https://svelte.dev/svelte-logo-horizontal.svg",
-        title: "Svelte",
-        desc: "将声明性组件转换为精准高效更新 DOM 的 JavaScript 代码",
-        link: "https://svelte.dev"
+        "icon": "https://logo.clearbit.com/themoneyconverter.com",
+        "title": "汇率转换工具",
+        "desc": "汇率转换工具",
+        "link": "http://themoneyconverter.com/CN/USD/GBP.aspx"
       },
       {
-        icon: "/icons/jquery.svg",
-        title: "jQuery API 中文文档",
-        desc: "一个兼容多浏览器的 JavaScript 框架",
-        link: "https://jquery.cuishifeng.cn"
+        "icon": "https://logo.clearbit.com/www.xe.com",
+        "title": "全球汇率换算器",
+        "desc": "全球汇率换算器",
+        "link": "http://www.xe.com/"
       },
       {
-        title: "ECharts",
-        desc: "一个基于 JavaScript 的开源可视化图表库",
-        icon: "https://echarts.apache.org/zh/images/favicon.png",
-        link: "https://echarts.apache.org/"
+        "icon": "https://logo.clearbit.com/www.boc.cn",
+        "title": "每日外汇牌价",
+        "desc": "每日外汇牌价",
+        "link": "http://www.boc.cn/cn/common/whpj.html"
       },
       {
-        title: "AntV",
-        desc: "蚂蚁集团全新一代数据可视化解决方案,让数据栩栩如生",
-        icon: "/icons/antv.png",
-        link: "https://antv.vision/"
+        "icon": "https://logo.clearbit.com/www.oil-price.net",
+        "title": "世界原油价格",
+        "desc": "世界原油价格",
+        "link": "http://www.oil-price.net/index.php?lang=zh"
+      },
+      {
+        "icon": "https://logo.clearbit.com/gold.hexun.com",
+        "title": "世界黄金价格",
+        "desc": "世界黄金价格",
+        "link": "http://gold.hexun.com/hjxh/"
+      },
+      {
+        "icon": "https://logo.clearbit.com/trademap.org",
+        "title": "世界贸易数据库",
+        "desc": "世界贸易数据库",
+        "link": "https://trademap.org/"
+      },
+      {
+        "icon": "https://logo.clearbit.com/www.statista.com",
+        "title": "行业数据统计",
+        "desc": "行业数据统计",
+        "link": "https://www.statista.com/"
       }
     ]
   },
   {
-    title: "CSS",
-    items: [
+    "title": "客户背景调查",
+    "items": [
       {
-        icon: "https://postcss.org/assets/logo-3e39b0aa.svg",
-        title: "PostCSS",
-        desc: "一个用 JavaScript 转换 CSS 的工具",
-        link: "https://postcss.org"
+        "icon": "https://logo.clearbit.com/whois.chinaz.com",
+        "title": "域名whois",
+        "desc": "域名whois",
+        "link": "http://whois.chinaz.com/"
       },
       {
-        icon: "https://sass-lang.com/assets/img/logos/logo-b6e1ef6e.svg",
-        title: "Sass",
-        desc: "一个成熟，稳定，功能强大的专业级 CSS 扩展语言",
-        link: "https://sass-lang.com"
+        "icon": "https://logo.clearbit.com/archive.org",
+        "title": "archive时光机",
+        "desc": "archive时光机",
+        "link": "https://archive.org/web/"
       },
       {
-        icon: "https://www.tailwindcss.cn/apple-touch-icon.png",
-        title: "TailwindCSS 中文网",
-        desc: "一个功能类优先的 CSS 框架",
-        link: "https://www.tailwindcss.cn"
+        "icon": "https://logo.clearbit.com/www.bigspy.com",
+        "title": "社媒广告工具BigSpy",
+        "desc": "社媒广告工具BigSpy",
+        "link": "https://www.bigspy.com/"
       },
       {
-        title: "WindiCSS",
-        desc: "Windi CSS 是下一代工具优先的 CSS 框架",
-        icon: "https://windicss.org/assets/logo.svg",
-        link: "https://windicss.org"
+        "icon": "https://logo.clearbit.com/www.google.com",
+        "title": "谷歌地图街景",
+        "desc": "谷歌地图街景",
+        "link": "https://www.google.com/maps"
       },
       {
-        title: "Twind",
-        desc: "现存最小、最快、功能最齐全的完整 Tailwind-in-JS 解决方案",
-        icon: "/icons/twind.svg",
-        link: "https://github.com/tw-in-js/twind"
+        "icon": "https://logo.clearbit.com/gsxt.saic.gov.cn",
+        "title": "中国企业信用公示系统",
+        "desc": "中国企业信用公示系统",
+        "link": "http://gsxt.saic.gov.cn/"
       },
       {
-        title: "UnoCSS",
-        desc: "即时按需原子 CSS 引擎",
-        icon: "https://uno.antfu.me//favicon.svg",
-        link: "https://uno.antfu.me/"
+        "icon": "https://logo.clearbit.com/www.acra.gov.sg",
+        "title": "新加坡公司查询",
+        "desc": "新加坡公司查询",
+        "link": "https://www.acra.gov.sg/home/"
       },
       {
-        title: "Bootstrap",
-        desc: "Bootstrap 是全球最受欢迎的前端开源工具库，它支持 Sass 变量和 mixin、响应式栅格系统、自带大量组件和众多强大的 JavaScript 插件。基于 Bootstrap 提供的强大功能，能够让你快速设计并定制你的网站",
-        icon: "https://img.kuizuo.cn/20210907055816.png",
-        link: "https://v5.bootcss.com/"
+        "icon": "https://logo.clearbit.com/abr.business.gov.au",
+        "title": "澳大利亚公司查询",
+        "desc": "澳大利亚公司查询",
+        "link": "http://abr.business.gov.au/"
       },
       {
-        title: "w3schools Css 教程",
-        desc: "w3schools 从基础到高级的CSS教程",
-        icon: "https://www.w3schools.com/favicon.ico",
-        link: "https://www.w3schools.com/css"
+        "icon": "https://logo.clearbit.com/coys.co.nz",
+        "title": "新西兰公司查询",
+        "desc": "新西兰公司查询",
+        "link": "http://coys.co.nz/"
       },
       {
-        title: "CSS-Inspiration",
-        desc: "CSS灵感",
-        icon: "/icons/css-inspiration.png",
-        link: "https://csscoco.com/inspiration"
+        "icon": "https://logo.clearbit.com/sanctionssearch.ofac.treas.gov",
+        "title": "美国OFAC制裁名单查询",
+        "desc": "美国OFAC制裁名单查询",
+        "link": "https://sanctionssearch.ofac.treas.gov/"
       },
       {
-        title: "CSS常用样式",
-        desc: "CSS常用样式",
-        icon: "https://tse1-mm.cn.bing.net/th?id=OIP-C.EgSPriuEnAtlIWJV8R_E1QHaGs&w=107&h=100&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
-        link: "https://github.com/QiShaoXuan/css_tricks"
+        "icon": "https://logo.clearbit.com/www.companiesnz.com",
+        "title": "澳洲\\北美\\南美公司查询",
+        "desc": "澳洲\\北美\\南美公司查询",
+        "link": "http://www.companiesnz.com/"
       },
       {
-        title: "CSSFX",
-        desc: "一个精心制作的集合设计的重点是流动性，简单性和易用性。使用最小标记的 CSS 支持",
-        icon: "/icons/cssfx.png",
-        link: "https://cssfx.netlify.app/"
+        "icon": "https://logo.clearbit.com/www.endole.co.uk",
+        "title": "英国公司注册信息查询",
+        "desc": "英国公司注册信息查询",
+        "link": "https://www.endole.co.uk/"
       },
       {
-        title: "NES.css",
-        desc: "一个像素风格的CSS框架",
-        icon: "https://nostalgic-css.github.io/NES.css/favicon.png",
-        link: "https://nostalgic-css.github.io/NES.css/"
+        "icon": "https://logo.clearbit.com/www.corporationwiki.com",
+        "title": "美国公司组织结构图查询",
+        "desc": "美国公司组织结构图查询",
+        "link": "https://www.corporationwiki.com/"
       },
       {
-        title: "clay.css",
-        desc: "claymorphism 泥陶态风格CSS",
-        icon: "https://codeadrian.github.io/clay.css/apple-touch-icon.png",
-        link: "https://codeadrian.github.io/clay.css/"
-      },
-      {
-        title: "loading.io",
-        desc: "Animation Made Easy",
-        icon: "/icons/loading.ico",
-        link: "https://loading.io/"
-      },
-      {
-        title: "神奇UI样式",
-        desc: "我们赋予任何人创建、分享和使用用 CSS 和 HTML 制作的漂亮自定义元素的权力。",
-        icon: "/icons/uiverse.png",
-        link: "https://uiverse.io"
-      },
-      {
-        title: "HYPE4",
-        desc: "透明玻璃态生成器",
-        icon: "https://hype4.academy/_next/static/media/logorwd@2x.b40bc92c.png",
-        link: "https://hype4.academy/tools/glassmorphism-generator"
-      },
-      {
-        title: "Omatsuri",
-        desc: "收集不同的发电机，让您的生活更轻松。",
-        icon: "https://omatsuri.app/assets/favicon.ico",
-        link: "https://omatsuri.app"
-      },
-      {
-        title: "smooth shadow",
-        desc: "快速轻松地实现基于 CSS 阴影的绝佳工具。您只需要指定一些阴影设置，代码就在您的路上。",
-        icon: "https://shadows.brumm.af/favicon.svg",
-        link: "https://shadows.brumm.af/"
-      },
-      {
-        title: "FANCY-BORDER-RADIUS",
-        desc: "花式边界半径,有助于创建 CSS 花式边框。",
-        icon: "https://9elements.github.io/fancy-border-radius/favicon-32x32.png",
-        link: "https://9elements.github.io/fancy-border-radius/"
-      },
-      {
-        title: "Coolors",
-        desc: "创建调色板",
-        icon: "/icons/coolors.png",
-        link: "https://coolors.co/"
+        "icon": "https://logo.clearbit.com/www.similarsites.com",
+        "title": "竞争对手网址查询",
+        "desc": "竞争对手网址查询",
+        "link": "https://www.similarsites.com/"
       }
     ]
   },
   {
-    title: "Node",
-    items: [
+    "title": "全球品牌查询",
+    "items": [
       {
-        icon: "https://deno.com/logo.svg",
-        title: "deno",
-        desc: "Deno is the open-source JavaScript runtime for the modern web.",
-        link: "https://deno.com/"
+        "icon": "https://logo.clearbit.com/wcjs.sbj.cnipa.gov.cn",
+        "title": "中国商标信息查询",
+        "desc": "中国商标信息查询",
+        "link": "http://wcjs.sbj.cnipa.gov.cn/txnT01.do"
       },
       {
-        icon: "https://nodejs.org/static/images/favicons/favicon.png",
-        title: "Node.js",
-        desc: "Node.js 是一个基于 Chrome V8 引擎的 JavaScript 运行环境",
-        link: "https://nodejs.org/zh-cn"
+        "icon": "https://logo.clearbit.com/www.drugfuture.com",
+        "title": "中国专利数据下载",
+        "desc": "中国专利数据下载",
+        "link": "https://www.drugfuture.com/cnpat/cn_patent.asp"
       },
       {
-        icon: "https://expressjs.com/images/favicon.png",
-        title: "Express",
-        desc: "基于 Node.js 平台，快速、开放、极简的 Web 开发框架",
-        link: "https://expressjs.com"
+        "icon": "https://logo.clearbit.com/202.127.48.148",
+        "title": "中国海关知识产权",
+        "desc": "中国海关知识产权",
+        "link": "http://202.127.48.148/zscq/search/jsp/vBrandSearchIndex.jsp"
       },
       {
-        icon: "https://nodejs.org/static/images/favicons/favicon.png",
-        title: "Koa",
-        desc: "基于 Node.js 平台的下一代 web 开发框架",
-        link: "https://koajs.com"
+        "icon": "https://logo.clearbit.com/esearch.ipd.gov.hk",
+        "title": "香港知识产权",
+        "desc": "香港知识产权",
+        "link": "https://esearch.ipd.gov.hk/nis-pos-view/"
       },
       {
-        icon: "https://www.eggjs.org/favicon.png",
-        title: "Egg",
-        desc: "为企业级框架和应用而生",
-        link: "https://www.eggjs.org/zh-CN"
+        "icon": "https://logo.clearbit.com/www.wipo.int",
+        "title": "WIPO全球品牌数据库",
+        "desc": "WIPO全球品牌数据库",
+        "link": "https://www.wipo.int/branddb/en/"
       },
       {
-        icon: "https://d33wubrfki0l68.cloudfront.net/e937e774cbbe23635999615ad5d7732decad182a/26072/logo-small.ede75a6b.svg",
-        title: "Nest.js 中文文档",
-        desc: "用于构建高效且可伸缩的服务端应用程序的渐进式 Node.js 框架",
-        link: "https://docs.nestjs.cn"
+        "icon": "https://logo.clearbit.com/tmsearch.uspto.gov",
+        "title": "美国USPTO商标查询",
+        "desc": "美国USPTO商标查询",
+        "link": "http://tmsearch.uspto.gov/"
       },
       {
-        title: "TypeORM",
-        desc: "TypeORM 是一个 ORM 框架，它可以运行在 NodeJS、Browser、Cordova、PhoneGap、Ionic、React Native、Expo 和 Electron 平台上，可以与 TypeScript 和 JavaScript (ES5,ES6,ES7,ES8)一起使用",
-        icon: "/icons/typeorm.ico",
-        link: "https://typeorm.bootcss.com"
+        "icon": "https://logo.clearbit.com/www.uspto.gov",
+        "title": "美国专利局",
+        "desc": "美国专利局",
+        "link": "https://www.uspto.gov/patents-application-process/search-patents"
       },
       {
-        title: "Axios",
-        desc: "Axios 是一个基于 promise 的网络请求库，可以用于浏览器和 node.js",
-        icon: "/icons/axios.ico",
-        link: "https://axios-http.cn/"
+        "icon": "https://logo.clearbit.com/patentscope2.wipo.int",
+        "title": "WIPO",
+        "desc": "WIPO",
+        "link": "https://patentscope2.wipo.int/search/en/search.jsf"
       },
       {
-        title: "NPM",
-        desc: "NPM是世界上最大的包管理器",
-        icon: "https://static.npmjs.com/58a19602036db1daee0d7863c94673a4.png",
-        link: "https://www.npmjs.com"
+        "icon": "https://logo.clearbit.com/euipo.europa.eu",
+        "title": "欧洲OHIM商标查询",
+        "desc": "欧洲OHIM商标查询",
+        "link": "https://euipo.europa.eu/eSearch/"
       },
       {
-        title: "Yarn",
-        desc: "Yarn 是一个软件包管理器，还可以作为项目管理工具。无论你是小型项目还是大型单体仓库（monorepos），无论是业余爱好者还是企业用户，Yarn 都能满足你的需求",
-        icon: "https://www.yarnpkg.cn/favicon-32x32.png",
-        link: "https://www.yarnpkg.cn"
+        "icon": "https://logo.clearbit.com/www.tmdn.org",
+        "title": "欧盟商标查询",
+        "desc": "欧盟商标查询",
+        "link": "https://www.tmdn.org/"
       },
       {
-        title: "Pnpm",
-        desc: "速度快、节省磁盘空间的软件包管理器",
-        icon: "https://www.pnpm.cn/img/favicon.png",
-        link: "https://pnpm.io"
+        "icon": "https://logo.clearbit.com/www.epo.org",
+        "title": "欧洲专利局",
+        "desc": "欧洲专利局",
+        "link": "https://www.epo.org/searching-for-patents.html"
+      },
+      {
+        "icon": "https://logo.clearbit.com/worldwide.espacenet.com",
+        "title": "欧洲专利局数据库",
+        "desc": "欧洲专利局数据库",
+        "link": "https://worldwide.espacenet.com/"
+      },
+      {
+        "icon": "https://logo.clearbit.com/www3.wipo.int",
+        "title": "外观侵权专利查询",
+        "desc": "外观侵权专利查询",
+        "link": "https://www3.wipo.int/designdb/en/index.jsp"
       }
     ]
   },
   {
-    title: "构建工具",
-    items: [
+    "title": "HS编码查询",
+    "items": [
       {
-        icon: "https://www.webpackjs.com/icon_180x180.png",
-        title: "Webpack 中文网",
-        desc: "一个用于现代 JavaScript 应用程序的静态模块打包工具",
-        link: "https://www.webpackjs.com"
+        "icon": "https://logo.clearbit.com/hs.bianmachaxun.com",
+        "title": "新通关网查",
+        "desc": "新通关网查",
+        "link": "http://hs.bianmachaxun.com/"
       },
       {
-        icon: "https://cn.vitejs.dev/logo.svg",
-        title: "Vite 中文文档",
-        desc: "下一代前端工具链",
-        link: "https://cn.vitejs.dev"
+        "icon": "https://logo.clearbit.com/www.hsbianma.com",
+        "title": "进出口商品HS",
+        "desc": "进出口商品HS",
+        "link": "https://www.hsbianma.com/"
       },
       {
-        icon: "https://www.rollupjs.com/img/favicon.png",
-        title: "Rollup",
-        desc: "Rollup 是一个 JavaScript 模块打包器",
-        link: "https://www.rollupjs.com"
+        "icon": "https://logo.clearbit.com/www.likecha.com",
+        "title": "立刻查HS",
+        "desc": "立刻查HS",
+        "link": "http://www.likecha.com/"
       },
       {
-        icon: "https://turbo.build/images/favicon-dark/apple-touch-icon.png",
-        title: "Turbo",
-        desc: "Turbo is an incremental bundler and build system optimized for JavaScript and TypeScript, written in Rust",
-        link: "https://turbo.build"
+        "icon": "https://logo.clearbit.com/hs.e-to-china.com.cn",
+        "title": "归类通HS",
+        "desc": "归类通HS",
+        "link": "https://hs.e-to-china.com.cn/"
       },
       {
-        icon: "https://www.babeljs.cn/img/favicon.png",
-        title: "Babel",
-        desc: "Babel 是一个 JavaScript 编译器",
-        link: "https://www.babeljs.cn"
+        "icon": "https://logo.clearbit.com/www.qgtong.com",
+        "title": "全关海关HS码",
+        "desc": "全关海关HS码",
+        "link": "http://www.qgtong.com/HScode/"
       },
       {
-        icon: "https://esbuild.github.io/favicon.svg",
-        title: "esbuild",
-        desc: "An extremely fast bundler for the web",
-        link: "https://esbuild.github.io"
+        "icon": "https://logo.clearbit.com/www.quanruntong.com",
+        "title": "全润通查询",
+        "desc": "全润通查询",
+        "link": "http://www.quanruntong.com/"
       },
       {
-        icon: "https://swc.rs/favicon/apple-touch-icon.png",
-        title: "SWC",
-        desc: "Rust-based platform for the Web",
-        link: "https://swc.rs"
+        "icon": "https://logo.clearbit.com/www.transcustoms.cn",
+        "title": "商品hs编码",
+        "desc": "商品hs编码",
+        "link": "http://www.transcustoms.cn/HScode/"
       }
     ]
   },
   {
-    title: "前端文档",
-    items: [
+    "title": "全球进出口查询",
+    "items": [
       {
-        icon: "https://developer.mozilla.org/apple-touch-icon.6803c6f0.png",
-        title: "MDN | Web 开发者指南",
-        desc: "Mozilla 的开发者平台，提供了大量关于 HTML、CSS 和 JavaScript 的详细文档以及广泛的 Web API 参考资料",
-        link: "https://developer.mozilla.org/zh-CN"
+        "icon": "https://logo.clearbit.com/www.indexmundi.com",
+        "title": "全球进出口查询",
+        "desc": "全球进出口查询",
+        "link": "https://www.indexmundi.com/trade/imports/"
       },
       {
-        icon: "https://static.runoob.com/images/favicon.ico",
-        title: "菜鸟教程",
-        desc: "学的不仅是技术，更是梦想！",
-        link: "https://www.runoob.com"
+        "icon": "https://logo.clearbit.com/www.haiguan.info",
+        "title": "中国进出口统计查询",
+        "desc": "中国进出口统计查询",
+        "link": "http://www.haiguan.info/OnLineSearch/TradeStat/StatComSub.aspx?TID=1"
       },
       {
-        icon: "/icons/es6.png",
-        title: "ES6 入门教程",
-        desc: "《ECMAScript 6 入门教程》是一本开源的 JavaScript 语言教程，全面介绍 ECMAScript 6 新引入的语法特性",
-        link: "https://es6.ruanyifeng.com/"
+        "icon": "https://logo.clearbit.com/www.import.or.kr",
+        "title": "韩国进出口商名录",
+        "desc": "韩国进出口商名录",
+        "link": "http://www.import.or.kr/"
       },
       {
-        icon: "/icons/typescript.png",
-        title: "深入理解 TypeScript",
-        desc: "《TypeScript Deep Dive》 是一本很好的开源书，从基础到深入，很全面的阐述了 TypeScript 的各种魔法",
-        link: "https://jkchao.github.io/typescript-book-chinese/"
+        "icon": "https://logo.clearbit.com/www.globalbuyersonline.com",
+        "title": "全球买家在线询盘",
+        "desc": "全球买家在线询盘",
+        "link": "https://www.globalbuyersonline.com/"
       },
       {
-        icon: "/icons/rust.svg",
-        title: "Rust语言圣经",
-        desc: "一份高质量 Rust 教程",
-        link: "https://course.rs"
+        "icon": "https://logo.clearbit.com/www.corporateinformation.com",
+        "title": "企业报告",
+        "desc": "企业报告",
+        "link": "http://www.corporateinformation.com/"
+      },
+      {
+        "icon": "https://logo.clearbit.com/countryreport.mofcom.gov.cn",
+        "title": "中国商务部-国别数据",
+        "desc": "中国商务部-国别数据",
+        "link": "https://countryreport.mofcom.gov.cn/default.asp"
+      },
+      {
+        "icon": "https://logo.clearbit.com/43.248.49.97",
+        "title": "中国海关统计数据",
+        "desc": "中国海关统计数据",
+        "link": "http://43.248.49.97/"
+      },
+      {
+        "icon": "https://logo.clearbit.com/data.worldbank.org.cn",
+        "title": "World Bank（世界银行）",
+        "desc": "World Bank（世界银行）",
+        "link": "https://data.worldbank.org.cn/"
+      },
+      {
+        "icon": "https://logo.clearbit.com/www.imf.org",
+        "title": "IMF（国际货币基金组织）",
+        "desc": "IMF（国际货币基金组织）",
+        "link": "https://www.imf.org/en/Data"
+      },
+      {
+        "icon": "https://logo.clearbit.com/www.wto.org",
+        "title": "WTO（世界贸易组织）",
+        "desc": "WTO（世界贸易组织）",
+        "link": "https://www.wto.org/index.htm"
+      },
+      {
+        "icon": "https://logo.clearbit.com/data.oecd.org",
+        "title": "OECD（经济合作与发展组织）",
+        "desc": "OECD（经济合作与发展组织）",
+        "link": "https://data.oecd.org/"
+      },
+      {
+        "icon": "https://logo.clearbit.com/comtrade.un.org",
+        "title": "联合国商品贸易统计数据库",
+        "desc": "联合国商品贸易统计数据库",
+        "link": "https://comtrade.un.org/"
+      },
+      {
+        "icon": "https://logo.clearbit.com/www.ibisworld.com",
+        "title": "行业发展报告",
+        "desc": "行业发展报告",
+        "link": "https://www.ibisworld.com/"
       }
     ]
   },
   {
-    title: "UI设计",
-    items: [
+    "title": "各国关税查询",
+    "items": [
       {
-        title: "Mastergo",
-        desc: "面向团队的专业 UI/UX 设计工具，多人同时编辑、随时在线评审、设计一键交付，让想法更快实现",
-        icon: "https://mastergo.com/favicon.ico",
-        link: "https://mastergo.com/"
+        "icon": "https://logo.clearbit.com/wmsw.mofcom.gov.cn",
+        "title": "商务部进出口税费",
+        "desc": "商务部进出口税费",
+        "link": "http://wmsw.mofcom.gov.cn/wmsw/"
       },
       {
-        title: "即时设计",
-        desc: "可云端编辑的专业级 UI 设计工具，为中国设计师量身打造，Windows 也能用的「协作版 Sketch」",
-        icon: "https://img.js.design/assets/webImg/favicon.ico",
-        link: "https://js.design/"
+        "icon": "https://logo.clearbit.com/hts.usitc.gov",
+        "title": "美国国际贸易关税",
+        "desc": "美国国际贸易关税",
+        "link": "https://hts.usitc.gov/"
       },
       {
-        title: "Figma",
-        desc: "Figma 是为 UI 设计而生的设计工具，除了有和 Sketch 一样基本的操作和功能，还有许多专为 UI 设计而生的强大功能。",
-        icon: "/icons/figma.png",
-        link: "https://www.figma.com/"
+        "icon": "https://logo.clearbit.com/ec.europa.eu",
+        "title": "欧盟关税数据库(TARIC)",
+        "desc": "欧盟关税数据库(TARIC)",
+        "link": "https://ec.europa.eu/taxation_customs/dds2/taric/taric_consultation.jsp?Lang=en"
       },
       {
-        title: "Pixso",
-        desc: "一站式完成原型、设计、交互与交付，为数字化团队协作提效",
-        icon: "https://cms.pixso.cn/images/logo.svg",
-        link: "https://pixso.cn/"
+        "icon": "https://logo.clearbit.com/www.russian-customs.org",
+        "title": "俄罗斯进口关税",
+        "desc": "俄罗斯进口关税",
+        "link": "http://www.russian-customs.org/legislation/tariff/index.html"
       },
       {
-        title: "AIDesign",
-        desc: "10秒创建您的LOGO！",
-        icon: "https://ailogo.qq.com//favicon.ico?v=1.1",
-        link: "https://ailogo.qq.com/"
+        "icon": "https://logo.clearbit.com/www.customs.go.jp",
+        "title": "日本进口关税",
+        "desc": "日本进口关税",
+        "link": "http://www.customs.go.jp/english/tariff/2019_4/index.htm"
+      },
+      {
+        "icon": "https://logo.clearbit.com/fta.mofcom.gov.cn",
+        "title": "中国自贸协定国家关税",
+        "desc": "中国自贸协定国家关税",
+        "link": "http://fta.mofcom.gov.cn/"
+      },
+      {
+        "icon": "https://logo.clearbit.com/cacs.mofcom.gov.cn",
+        "title": "中国贸易反倾销税率",
+        "desc": "中国贸易反倾销税率",
+        "link": "http://cacs.mofcom.gov.cn/index.shtml"
+      },
+      {
+        "icon": "https://logo.clearbit.com/findrulesoforigin.org",
+        "title": "全球贸易单证要求关税查询",
+        "desc": "全球贸易单证要求关税查询",
+        "link": "https://findrulesoforigin.org/"
+      },
+      {
+        "icon": "https://logo.clearbit.com/www.haiguan.info",
+        "title": "关税计算器",
+        "desc": "关税计算器",
+        "link": "http://www.haiguan.info/OnLineSearch/Tax/Default.aspx"
+      },
+      {
+        "icon": "https://logo.clearbit.com/www.customs.gov.cn",
+        "title": "进出口商品税率",
+        "desc": "进出口商品税率",
+        "link": "http://www.customs.gov.cn/customs/302427/302442/shangpinshuilv/index.html"
       }
     ]
   },
   {
-    title: "字体图标",
-    items: [
+    "title": "全球信息查询",
+    "items": [
       {
-        title: "iconify",
-        desc: "数千个图标，一个统一的框架",
-        icon: "https://icon-sets.iconify.design/favicon.ico",
-        link: "https://icon-sets.iconify.design/"
+        "icon": "https://logo.clearbit.com/www.countrycode.org",
+        "title": "查询国家信息",
+        "desc": "查询国家信息",
+        "link": "https://www.countrycode.org/"
       },
       {
-        title: "icones",
-        desc: "Icon Explorer with Instant searching, powered by Iconify",
-        icon: "https://icones.js.org/favicon.svg",
-        link: "https://icones.js.org/"
+        "icon": "https://logo.clearbit.com/www.timeanddate.com",
+        "title": "世界各国假期查询",
+        "desc": "世界各国假期查询",
+        "link": "https://www.timeanddate.com/holidays/armenia/"
       },
       {
-        title: "iconfont",
-        desc: "iconfont-国内功能很强大且图标内容很丰富的矢量图标库，提供矢量图标下载、在线存储、格式转换等功能",
-        icon: "https://img.alicdn.com/imgextra/i4/O1CN01EYTRnJ297D6vehehJ_!!6000000008020-55-tps-64-64.svg",
-        link: "https://www.iconfont.cn/"
+        "icon": "https://logo.clearbit.com/openweathermap.org",
+        "title": "全球天气查",
+        "desc": "全球天气查",
+        "link": "https://openweathermap.org/city/1795565"
       },
       {
-        title: "feathericons",
-        desc: "简单美丽的开源图标",
-        icon: "https://feathericons.com/favicon.ico",
-        link: "https://feathericons.com/"
+        "icon": "https://logo.clearbit.com/www.mapquest.com",
+        "title": "全球地图定位",
+        "desc": "全球地图定位",
+        "link": "http://www.mapquest.com/"
       },
       {
-        title: "undraw",
-        desc: "一个不断更新的设计项目与美丽的SVG图像，使用完全免费",
-        icon: "https://undraw.co/apple-touch-icon.png",
-        link: "https://undraw.co/"
+        "icon": "https://logo.clearbit.com/www.nowmsg.com",
+        "title": "国外邮编",
+        "desc": "国外邮编",
+        "link": "https://www.nowmsg.com/"
       },
       {
-        title: "igoutu",
-        desc: "图标、插图、照片、音乐和设计工具",
-        icon: "/icons/igoutu.png",
-        link: "https://igoutu.cn/"
+        "icon": "https://logo.clearbit.com/fair.mofcom.gov.cn",
+        "title": "全球展会查",
+        "desc": "全球展会查",
+        "link": "http://fair.mofcom.gov.cn/"
       },
       {
-        title: "Emojiall",
-        desc: "Emoji表情大全",
-        icon: "https://www.emojiall.com/apple-touch-icon.png",
-        link: "https://www.emojiall.com/zh-hans"
-      },
-      {
-        title: "渐变色网站",
-        desc: "数百万个自动生成的渐变的网站",
-        icon: "https://gradihunt.com/favicon.ico",
-        link: "https://gradihunt.com/"
-      },
-      {
-        title: "谷歌字体",
-        desc: "一个生成渐变色背景的网站",
-        icon: "/icons/google_fonts.ico",
-        link: "https://googlefonts.cn/"
-      },
-      {
-        title: "Typing SVG",
-        desc: "一个动态生成的可自定义 SVG 打字效果",
-        icon: "/icons/typing-svg.png",
-        link: "https://readme-typing-svg.herokuapp.com/demo/"
+        "icon": "https://logo.clearbit.com/www.shijian.cc",
+        "title": "全球节日",
+        "desc": "全球节日",
+        "link": "http://www.shijian.cc/jieri/"
       }
     ]
   },
   {
-    title: "跨平台",
-    items: [
+    "title": "实用关务工具*实用关务查询",
+    "items": [
       {
-        title: "Electron",
-        desc: "使用 JavaScript，HTML 和 CSS 构建跨平台的桌面应用程序",
-        icon: "/icons/electron.ico",
-        link: "https://www.electronjs.org/"
+        "icon": "https://logo.clearbit.com/www.haiguan.info",
+        "title": "通关业务查",
+        "desc": "通关业务查",
+        "link": "http://www.haiguan.info/OnLineSearch/Index.aspx"
       },
       {
-        title: "Tauri",
-        desc: "Tauri是一个框架，用于为所有主要桌面平台构建小巧、快速的二进制文件",
-        icon: "https://tauri.app/meta/favicon-96x96.png",
-        link: "https://tauri.app/"
+        "icon": "https://logo.clearbit.com/check.ccpiteco.net",
+        "title": "贸促原产地证真伪",
+        "desc": "贸促原产地证真伪",
+        "link": "http://check.ccpiteco.net/"
       },
       {
-        title: "Flutter",
-        desc: "Flutter 是 Google 开源的应用开发框架，仅通过一套代码库，就能构建精美的、原生平台编译的多平台应用",
-        icon: "https://flutter.cn/assets/images/cn/flutter-icon.png",
-        link: "https://flutter.cn/"
+        "icon": "https://logo.clearbit.com/origin.customs.gov.cn",
+        "title": "海关原产地证真伪",
+        "desc": "海关原产地证真伪",
+        "link": "http://origin.customs.gov.cn/"
       },
       {
-        title: "Uni-app",
-        desc: "uni-app 是一个使用 Vue.js 开发所有前端应用的框架，开发者编写一套代码，可发布到iOS、Android、Web（响应式）、以及各种小程序（微信/支付宝/百度/头条/QQ/快手/钉钉/淘宝）、快应用等多个平台",
-        icon: "https://vkceyugu.cdn.bspapp.com/VKCEYUGU-a90b5f95-90ba-4d30-a6a7-cd4d057327db/d23e842c-58fc-4574-998d-17fdc7811cc3.png",
-        link: "https://uniapp.dcloud.io/"
+        "icon": "https://logo.clearbit.com/co.ccpit.org",
+        "title": "原产地证申报系统",
+        "desc": "原产地证申报系统",
+        "link": "https://co.ccpit.org/"
       },
       {
-        title: "Taro",
-        desc: "Taro 是一个开放式跨端跨框架解决方案，支持使用 React/Vue/Nerv 等框架来开发 微信 / 京东 / 百度 / 支付宝 / 字节跳动 / QQ / 飞书 小程序 / H5 / RN 等应用",
-        icon: "/icons/taro.png",
-        link: "https://taro.jd.com"
+        "icon": "https://logo.clearbit.com/www.chinaport.gov.cn",
+        "title": "中国电子口岸",
+        "desc": "中国电子口岸",
+        "link": "http://www.chinaport.gov.cn/"
+      },
+      {
+        "icon": "https://logo.clearbit.com/www.hpedi.com.cn",
+        "title": "报关单号及状态",
+        "desc": "报关单号及状态",
+        "link": "http://www.hpedi.com.cn/"
+      },
+      {
+        "icon": "https://logo.clearbit.com/www.haiguan.info",
+        "title": "外汇核销单",
+        "desc": "外汇核销单",
+        "link": "http://www.haiguan.info/OnLineSearch/Index.aspx"
+      },
+      {
+        "icon": "https://logo.clearbit.com/www.customs.gov.cn",
+        "title": "海关网上服务",
+        "desc": "海关网上服务",
+        "link": "http://www.customs.gov.cn/"
+      },
+      {
+        "icon": "https://logo.clearbit.com/www.sol.com.cn",
+        "title": "中国关税查询",
+        "desc": "中国关税查询",
+        "link": "http://www.sol.com.cn/tool/tariff/"
+      },
+      {
+        "icon": "https://logo.clearbit.com/www.customs.gov.cn",
+        "title": "通关状态查",
+        "desc": "通关状态查",
+        "link": "http://www.customs.gov.cn/customs/302427/302442/tgzt/index.html"
+      },
+      {
+        "icon": "https://logo.clearbit.com/www.track-trace.com",
+        "title": "空运提单查",
+        "desc": "空运提单查",
+        "link": "https://www.track-trace.com/aircargo"
+      },
+      {
+        "icon": "https://logo.clearbit.com/www.track-trace.com",
+        "title": "国际国内快递查询",
+        "desc": "国际国内快递查询",
+        "link": "https://www.track-trace.com/"
+      },
+      {
+        "icon": "https://logo.clearbit.com/www.haiguan.info",
+        "title": "海关业务查询大全",
+        "desc": "海关业务查询大全",
+        "link": "http://www.haiguan.info/OnLineSearch/Index.aspx"
+      },
+      {
+        "icon": "https://logo.clearbit.com/www.tax.sh.gov.cn",
+        "title": "出口商品代码及退税率查询",
+        "desc": "出口商品代码及退税率查询",
+        "link": "https://www.tax.sh.gov.cn/newxbwt/wzcx/TYCX_tuiShuiCodeSearch.jsp?SUB=111"
+      },
+      {
+        "icon": "https://logo.clearbit.com/www.chinatax.gov.cn",
+        "title": "国家税务总局",
+        "desc": "国家税务总局",
+        "link": "http://www.chinatax.gov.cn/"
       }
     ]
   },
   {
-    title: "站点生成",
-    items: [
+    "title": "图片处理工具",
+    "items": [
       {
-        title: "VitePress",
-        desc: "Vue 驱动并使用Vite构建的静态网站生成器",
-        icon: "https://vuepress.vuejs.org/hero.png",
-        link: "https://vitepress.vuejs.org"
+        "icon": "https://logo.clearbit.com/www.fotojet.com",
+        "title": "自制电子贺卡1",
+        "desc": "自制电子贺卡1",
+        "link": "https://www.fotojet.com/cn/features/photo-card/"
       },
       {
-        title: "VuePress",
-        desc: "Vue 驱动的静态网站生成器",
-        icon: "https://vuepress.vuejs.org/hero.png",
-        link: "https://vuepress.vuejs.org"
+        "icon": "https://logo.clearbit.com/zh-cn.card.hi-my.com",
+        "title": "自制电子贺卡2",
+        "desc": "自制电子贺卡2",
+        "link": "http://zh-cn.card.hi-my.com/"
       },
       {
-        title: "Docusaurus",
-        desc: "快速构建以内容为核心的最佳网站",
-        icon: "/icons/docusaurus.svg",
-        link: "https://docusaurus.io"
+        "icon": "https://logo.clearbit.com/www.123greetings.com",
+        "title": "自制电子贺卡3",
+        "desc": "自制电子贺卡3",
+        "link": "http://www.123greetings.com/"
       },
       {
-        title: "Hexo",
-        desc: "快速、简洁且高效的博客框架",
-        icon: "https://hexo.io/favicon.ico",
-        link: "https://hexo.io"
+        "icon": "https://logo.clearbit.com/pan.baidu.com",
+        "title": "节日贺卡图片",
+        "desc": "节日贺卡图片",
+        "link": "https://pan.baidu.com/s/1TJ7AqxIMyOD5LKfyoHGExw"
       },
       {
-        title: "GitBook",
-        desc: "GitBook帮助您为用户发布漂亮的文档，并集中您的团队的知识进行高级协作",
-        icon: "https://assets-global.website-files.com/600ead1452cf056d0e52dbed/6246d2036225eac4d74cff27_Favicon_Blue.png",
-        link: "https://www.gitbook.com/"
+        "icon": "https://logo.clearbit.com/pan.baidu.com",
+        "title": "2020外贸日历",
+        "desc": "2020外贸日历",
+        "link": "https://pan.baidu.com/s/1mU5ZHwRQC-2oOuyfJfyhaw"
       },
       {
-        title: "Docsify",
-        desc: "docsify 可以快速帮你生成文档网站",
-        icon: "https://docsify.js.org/_media/icon.svg",
-        link: "https://docsify.js.org"
+        "icon": "https://logo.clearbit.com/www.canva.com",
+        "title": "Canva（在线平面设计）",
+        "desc": "Canva（在线平面设计）",
+        "link": "https://www.canva.com/"
       },
       {
-        title: "WordPress",
-        desc: "WordPress是一款能让您建立出色网站、博客或应用程序的开源软件",
-        icon: "https://s.w.org/images/wmark.png",
-        link: "https://cn.wordpress.org/"
+        "icon": "https://logo.clearbit.com/www.chuangkit.com",
+        "title": "创客贴（在线图片编辑）",
+        "desc": "创客贴（在线图片编辑）",
+        "link": "https://www.chuangkit.com/"
+      },
+      {
+        "icon": "https://logo.clearbit.com/www.remove.bg",
+        "title": "一键抠图",
+        "desc": "一键抠图",
+        "link": "https://www.remove.bg/"
+      },
+      {
+        "icon": "https://logo.clearbit.com/hatchful.shopify.com",
+        "title": "LOGO设计",
+        "desc": "LOGO设计",
+        "link": "https://hatchful.shopify.com/"
+      },
+      {
+        "icon": "https://logo.clearbit.com/tinypng.com",
+        "title": "图片压缩工具",
+        "desc": "图片压缩工具",
+        "link": "https://tinypng.com/"
+      },
+      {
+        "icon": "https://logo.clearbit.com/mt.meipai.com",
+        "title": "美图秀秀",
+        "desc": "美图秀秀",
+        "link": "https://mt.meipai.com/"
+      },
+      {
+        "icon": "https://logo.clearbit.com/bigjpg.com",
+        "title": "图片无限放大",
+        "desc": "图片无限放大",
+        "link": "https://bigjpg.com/zh"
+      },
+      {
+        "icon": "https://logo.clearbit.com/www.imgbot.ai",
+        "title": "在线图片处理",
+        "desc": "在线图片处理",
+        "link": "https://www.imgbot.ai/"
+      },
+      {
+        "icon": "https://logo.clearbit.com/counterfeit.technology",
+        "title": "图片外观侵权查询",
+        "desc": "图片外观侵权查询",
+        "link": "http://counterfeit.technology/"
+      },
+      {
+        "icon": "https://logo.clearbit.com/www.gaoding.com",
+        "title": "抠图",
+        "desc": "抠图",
+        "link": "https://www.gaoding.com/koutu"
+      },
+      {
+        "icon": "https://logo.clearbit.com/www.remove.bg",
+        "title": "消除图片背景",
+        "desc": "消除图片背景",
+        "link": "https://www.remove.bg/zh"
+      },
+      {
+        "icon": "https://logo.clearbit.com/www.photopea.com",
+        "title": "在线PS工具1",
+        "desc": "在线PS工具1",
+        "link": "https://www.photopea.com/"
+      },
+      {
+        "icon": "https://logo.clearbit.com/ps.gaoding.com",
+        "title": "在线PS工具2",
+        "desc": "在线PS工具2",
+        "link": "https://ps.gaoding.com/#/"
       }
     ]
   },
   {
-    title: "代码托管",
-    items: [
+    "title": "办公黑科技工具",
+    "items": [
       {
-        title: "Github",
-        icon: "/icons/github.ico",
-        desc: "一个面向开源及私有软件项目的托管平台",
-        link: "https://github.com"
+        "icon": "https://logo.clearbit.com/wetransfer.com",
+        "title": "国际网盘",
+        "desc": "国际网盘",
+        "link": "https://wetransfer.com//"
       },
       {
-        title: "Gitee",
-        desc: "Gitee 是中国领先的基于 Git 的代码托管平台，类似于全球知名的 GitHub",
-        icon: "/icons/gitee.ico",
-        link: "https://gitee.com/"
+        "icon": "https://logo.clearbit.com/online.b1.org",
+        "title": "在线解压缩",
+        "desc": "在线解压缩",
+        "link": "http://online.b1.org/online"
       },
       {
-        title: "Gitlab",
-        desc: "更快地交付安全代码，部署到任何云，并推动业务成果",
-        icon: "https://gitlab.com/uploads/-/system/group/avatar/6543/logo-extra-whitespace.png?width=64",
-        link: "https://gitlab.com/"
+        "icon": "https://logo.clearbit.com/www.voidtools.com",
+        "title": "文件搜索",
+        "desc": "文件搜索",
+        "link": "https://www.voidtools.com/"
       },
       {
-        title: "Gitea",
-        desc: "Gitea 是一个开源社区驱动的轻量级代码托管解决方案，后端采用 Go 编写，采用 MIT 许可证.",
-        icon: "https://gitea.io/images/favicon.png",
-        link: "https://gitea.io/"
+        "icon": "https://logo.clearbit.com/transfer.pcloud.com",
+        "title": "文件传输",
+        "desc": "文件传输",
+        "link": "https://transfer.pcloud.com/"
       },
       {
-        title: "Coding",
-        desc: "提供一站式研发管理平台及云原生开发工具，让软件研发如同工业生产般简单高效，助力企业提升研发管理效能",
-        icon: "/icons/coding.png",
-        link: "https://coding.net/"
+        "icon": "https://logo.clearbit.com/www.free-pdftoword.com",
+        "title": "在线免费转换PDF",
+        "desc": "在线免费转换PDF",
+        "link": "http://www.free-pdftoword.com/cn/"
+      },
+      {
+        "icon": "https://logo.clearbit.com/www.fromtexttospeech.com",
+        "title": "文档变语音",
+        "desc": "文档变语音",
+        "link": "http://www.fromtexttospeech.com/"
+      },
+      {
+        "icon": "https://logo.clearbit.com/www.hipdf.com",
+        "title": "PDF格式转换1",
+        "desc": "PDF格式转换1",
+        "link": "https://www.hipdf.com/"
+      },
+      {
+        "icon": "https://logo.clearbit.com/smallpdf.com",
+        "title": "PDF格式转换2",
+        "desc": "PDF格式转换2",
+        "link": "https://smallpdf.com/cn"
+      },
+      {
+        "icon": "https://logo.clearbit.com/tools.pdf24.org",
+        "title": "PDF工具",
+        "desc": "PDF工具",
+        "link": "https://tools.pdf24.org/en/"
+      },
+      {
+        "icon": "https://logo.clearbit.com/convertio.co",
+        "title": "文件转换器",
+        "desc": "文件转换器",
+        "link": "https://convertio.co/zh/"
+      },
+      {
+        "icon": "https://logo.clearbit.com/www.flvcd.com",
+        "title": "视频下载",
+        "desc": "视频下载",
+        "link": "http://www.flvcd.com/"
+      },
+      {
+        "icon": "https://logo.clearbit.com/www.any-video-converter.com",
+        "title": "视频格式转换",
+        "desc": "视频格式转换",
+        "link": "http://www.any-video-converter.com/products/for_video_free/"
+      },
+      {
+        "icon": "https://logo.clearbit.com/www.videosmaller.com",
+        "title": "视频文件压缩",
+        "desc": "视频文件压缩",
+        "link": "http://www.videosmaller.com/"
+      },
+      {
+        "icon": "https://logo.clearbit.com/www.w3toys.com",
+        "title": "下载Instagram视频",
+        "desc": "下载Instagram视频",
+        "link": "https://www.w3toys.com/"
+      },
+      {
+        "icon": "https://logo.clearbit.com/get.promorepublic.com",
+        "title": "FaceBook内容营销模板",
+        "desc": "FaceBook内容营销模板",
+        "link": "http://get.promorepublic.com/facebook-content/"
+      },
+      {
+        "icon": "https://logo.clearbit.com/www.fbdown.net",
+        "title": "下载Facebook视频",
+        "desc": "下载Facebook视频",
+        "link": "https://www.fbdown.net/"
+      },
+      {
+        "icon": "https://logo.clearbit.com/pickvideo.net",
+        "title": "下载Youtube视频",
+        "desc": "下载Youtube视频",
+        "link": "https://pickvideo.net/youtube-video-downloader"
+      },
+      {
+        "icon": "https://logo.clearbit.com/developers.google.com",
+        "title": "Google测速",
+        "desc": "Google测速",
+        "link": "https://developers.google.com/speed/pagespeed/insights/"
+      },
+      {
+        "icon": "https://logo.clearbit.com/tools.pingdom.com",
+        "title": "Pingdom测速",
+        "desc": "Pingdom测速",
+        "link": "https://tools.pingdom.com/"
+      },
+      {
+        "icon": "https://logo.clearbit.com/gtmetrix.com",
+        "title": "GTmetrix测速",
+        "desc": "GTmetrix测速",
+        "link": "https://gtmetrix.com/"
+      },
+      {
+        "icon": "https://logo.clearbit.com/cp.anyknew.com",
+        "title": "拷贝兔",
+        "desc": "拷贝兔",
+        "link": "https://cp.anyknew.com/"
+      },
+      {
+        "icon": "https://logo.clearbit.com/mubu.com",
+        "title": "幕布",
+        "desc": "幕布",
+        "link": "https://mubu.com/"
+      },
+      {
+        "icon": "https://logo.clearbit.com/cowtransfer.com",
+        "title": "奶牛快传",
+        "desc": "奶牛快传",
+        "link": "https://cowtransfer.com/"
+      },
+      {
+        "icon": "https://logo.clearbit.com/duomu.tv",
+        "title": "宣传视频",
+        "desc": "宣传视频",
+        "link": "https://duomu.tv/"
       }
     ]
   },
   {
-    title: "网站托管",
-    items: [
+    "title": "实用生活工具*实用生活查询",
+    "items": [
       {
-        title: "Vercel",
-        desc: "Vercel将最好的开发人员体验与对最终用户性能的执着关注相结合",
-        icon: "https://assets.vercel.com/image/upload/q_auto/front/favicon/vercel/57x57.png",
-        link: "https://vercel.com"
+        "icon": "https://logo.clearbit.com/www.huoche.net",
+        "title": "列车时刻查询",
+        "desc": "列车时刻查询",
+        "link": "http://www.huoche.net/"
       },
       {
-        title: "Netlify",
-        desc: "Netlify 是一家提供静态网站托管的云平台，支持从 Github, GitLab, Bitbucket 等代码仓库中自动拉取代码 然后进行项目打包和部署等功能",
-        icon: "/icons/netlify.png",
-        link: "https://www.netlify.com"
+        "icon": "https://logo.clearbit.com/www.12306.cn",
+        "title": "火车时刻表",
+        "desc": "火车时刻表",
+        "link": "http://www.12306.cn/"
       },
       {
-        title: "Coolify",
-        desc: "一个开源和自我托管的 Heroku/Netlify 替代品",
-        icon: "/icons/coolify.png",
-        link: "https://coolify.io"
+        "icon": "https://logo.clearbit.com/www.qunar.com",
+        "title": "航班查询",
+        "desc": "航班查询",
+        "link": "http://www.qunar.com/"
       },
       {
-        title: "GitHub Codespace",
-        desc: "全球最大的软件项目托管平台，发现优质开源项目",
-        icon: "https://github.githubassets.com/favicons/favicon.svg",
-        link: "https://github.com/codespaces"
+        "icon": "https://logo.clearbit.com/www.keyunzhan.com",
+        "title": "全国长途汽车查询表",
+        "desc": "全国长途汽车查询表",
+        "link": "http://www.keyunzhan.com/"
       },
       {
-        title: "Railway",
-        desc: "带上你的代码，剩下交给我们 ",
-        icon: "/icons/railway.png",
-        link: "https://railway.app/"
+        "icon": "https://logo.clearbit.com/www.chelink.com",
+        "title": "全国汽车站刻查表",
+        "desc": "全国汽车站刻查表",
+        "link": "http://www.chelink.com/topic/changtu.htm"
       },
       {
-        title: "Supabase",
-        desc: "Supabase 是一个开源的后端即服务（BaaS）平台，它可以帮助开发者快速构建应用程序，无需编写后端代码。",
-        icon: "/icons/supabase.png",
-        link: "https://supabase.com/"
-      }
-    ]
-  },
-  {
-    title: "社区",
-    items: [
-      {
-        icon: "https://cdn.sstatic.net/Sites/stackoverflow/Img/apple-touch-icon.png?v=c78bd457575a",
-        title: "Stack Overflow",
-        desc: "全球最大的技术问答网站",
-        link: "https://stackoverflow.com"
+        "icon": "https://logo.clearbit.com/gerensuodeshui.cn",
+        "title": "个人所得税计算器2",
+        "desc": "个人所得税计算器2",
+        "link": "https://gerensuodeshui.cn/"
       },
       {
-        title: "稀土掘金",
-        icon: "https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web//static/favicons/apple-touch-icon.png",
-        desc: "面向全球中文开发者的技术内容分享与交流平台",
-        link: "https://juejin.cn"
+        "icon": "https://logo.clearbit.com/www.chsi.com.cn",
+        "title": "学历查询",
+        "desc": "学历查询",
+        "link": "http://www.chsi.com.cn/xlcx/"
       },
       {
-        title: "V2EX",
-        icon: "https://www.v2ex.com/static/icon-192.png",
-        desc: "一个关于分享和探索的地方",
-        link: "https://www.v2ex.com"
+        "icon": "https://logo.clearbit.com/www.ip138.com",
+        "title": "手机归属地查询",
+        "desc": "手机归属地查询",
+        "link": "http://www.ip138.com:8080/search.asp"
       },
       {
-        title: "SegmentFault 思否",
-        icon: "https://static.segmentfault.com/main_site_next/0dc4bace/touch-icon.png",
-        desc: "技术问答开发者社区",
-        link: "https://segmentfault.com"
+        "icon": "https://logo.clearbit.com/tool.chinaz.com",
+        "title": "IP地址查询",
+        "desc": "IP地址查询",
+        "link": "http://tool.chinaz.com/"
       },
       {
-        title: "博客园",
-        icon: "/icons/cnblogs.svg",
-        desc: "博客园是一个面向开发者的知识分享社区",
-        link: "https://www.cnblogs.com"
+        "icon": "https://logo.clearbit.com/jbk.39.net",
+        "title": "疾病查询",
+        "desc": "疾病查询",
+        "link": "http://jbk.39.net/"
       },
       {
-        title: "知乎",
-        icon: "https://static.zhihu.com/heifetz/assets/apple-touch-icon-60.362a8eac.png",
-        desc: "中文互联网高质量的问答社区和创作者聚集的原创内容平台",
-        link: "https://zhihu.com"
+        "icon": "https://logo.clearbit.com/www.haodf.com",
+        "title": "医院查询",
+        "desc": "医院查询",
+        "link": "http://www.haodf.com/yiyuan/beijing/list.htm"
+      },
+      {
+        "icon": "https://logo.clearbit.com/www.name321.com",
+        "title": "娱乐算命",
+        "desc": "娱乐算命",
+        "link": "http://www.name321.com/chest/index.htm"
+      },
+      {
+        "icon": "https://logo.clearbit.com/www.youbian.com",
+        "title": "邮编查询",
+        "desc": "邮编查询",
+        "link": "http://www.youbian.com/"
+      },
+      {
+        "icon": "https://logo.clearbit.com/www.tvsou.com",
+        "title": "电视节目查询",
+        "desc": "电视节目查询",
+        "link": "http://www.tvsou.com/"
+      },
+      {
+        "icon": "https://logo.clearbit.com/www.ip138.com",
+        "title": "全国各地车牌查询表",
+        "desc": "全国各地车牌查询表",
+        "link": "http://www.ip138.com/carlist.htm"
+      },
+      {
+        "icon": "https://logo.clearbit.com/qq.ip138.com",
+        "title": "身份证查询",
+        "desc": "身份证查询",
+        "link": "http://qq.ip138.com/idsearch/"
       }
     ]
   }
